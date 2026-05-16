@@ -5,7 +5,7 @@ let cors=require("cors");
 app.use(cors());
 app.use(express.json())
 
-let PORT=process.env.PORT|3000;
+let PORT=process.env.PORT||3000;
 app.listen(PORT,()=>{
     console.log("server is running");
 })
